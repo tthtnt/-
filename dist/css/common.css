@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: 18px;
+  font-family: "微软雅黑","黑体",Helvetica,Arial;
+}
+input,button{
+  outline: none;
+}
+button{
+  cursor: pointer;
+}
+/*::-webkit-scrollbar {*/
+  /*width:0;*/
+  /*height:0;*/
+/*}*/
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover{
+  color: #9f9f9f;
+}
+a.active{
+  color: #b41f25;
+}
+.container{
+  width: 100%;
+}
+.version-container{
+  max-width:1200px;
+  margin: 0 auto;
+}
+.company-version{
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.nav{
+  height: 136px;
+  /*background-color: #4f4c4c;*/
+  background-color: #111;
+}
+.nav-header,.nav-content{
+  float: left;
+  height: 136px;
+  padding: 20px 0;
+}
+.nav-content{
+  float: right;
+}
+.nav-header{
+  max-width: 200px;
+}
+.nav-content{
+  max-width: 1000px;
+}
+.search-form{
+  width: 240px;
+  float: right;
+}
+.enter{
+  width: 200px;
+  height: 60px;
+  padding: 10px 0;
+  float: left;
+}
+.enter input{
+  width: 200px;
+  height: 40px;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #9f9f9f;
+  border-right: none;
+  padding: 1px 10px;
+  box-shadow: 1px 1px 3px #9f9f9f inset;
+}
+.search-button{
+  width: 40px;
+  float: right;
+  height: 60px;
+  padding: 10px 0;
+}
+.search-button button{
+  outline: none;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #9f9f9f;
+  border-left: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  box-shadow: -1px -1px 3px #9f9f9f inset;
+}
+.main-nav li{
+  float: left;
+  list-style: none;
+  width: 100px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 1px #9f9f9f;
+}
