@@ -1,5 +1,6 @@
 window.onload = function () {
   getSize();
+
   // disabledMouseWheel();
   my$("open-news-directory").onclick = function () {
     changeAnimate(my$("news-directory-content"),{"right":"-450"},function () {
@@ -24,14 +25,37 @@ window.onload = function () {
       changeAnimate(my$("news-contents-inner"),{"right":"-900"})
     })
   };
-  my$("video_under").onclick = function () {
-    let height = getViewPortHeight();
-    changeAnimate(window,{"scrollTop":"-"+height})
-  }
   let introduction = $("#introduction").offset().top;
   $("#video_under").click(function () {
     $('html,body').animate({scrollTop:introduction},1000);
-  })
+  });
+  $(document).bind('mousewheel', function(event, delta) {
+    return false;
+  });
+  objEvt = $._data($(document)[0], 'events');
+};
+let p=0;
+let t=0;
+var objEvt = null;
+window.onscroll = function(){
+  p=$(this).scrollTop();
+  let height = getViewPortHeight();
+  if (p >= height){
+    $(document).unbind('mousewheel');
+    objEvt = $._data($(document)[0], 'events');
+  }
+  if(t>p){
+    if (p < height) {
+      if (!objEvt){
+        $(document).bind('mousewheel', function(event, delta) {
+          return false;
+        });
+        objEvt = $._data($(document)[0], 'events');
+        $('html,body').animate({scrollTop:0},1000);
+      }
+    }
+  }
+  t = p;
 };
 
 function getSize() {
@@ -73,4 +97,17 @@ function scrollFunc(evt) {
     evt.returnValue = false;
   }
   return false;
+}
+function abledMouseWheel() {
+  console.log("hahha");
+  if(document.removeEventListener) {
+    document.removeEventListener('DOMMouseScroll', scrollFunc, false);
+  }//W3C
+  window.onmousewheel = document.onmousewheel = scrollStrat;//IE/Opera/Chrome
+}
+function scrollStrat(evt) {
+  evt = evt || window.event;
+  evt.cancelBubble = false;
+  evt.returnValue = true;
+  return true;
 }
