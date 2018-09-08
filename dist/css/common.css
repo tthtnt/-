@@ -11,10 +11,10 @@ input,button{
 button{
   cursor: pointer;
 }
-/*::-webkit-scrollbar {*/
-  /*width:0;*/
-  /*height:0;*/
-/*}*/
+::-webkit-scrollbar {
+  width:0;
+  height:0;
+}
 a{
   color: #ffffff;
   text-decoration: none;
@@ -24,6 +24,9 @@ a:hover{
 }
 a.active{
   color: #b41f25;
+}
+img{
+  /*width: 100%;*/
 }
 .container{
   width: 100%;
@@ -103,3 +106,38 @@ a.active{
   text-align: center;
   text-shadow: 1px 1px 1px #9f9f9f;
 }
+/*banner开始*/
+.banner img{
+  width: 100%;
+}
+/*banner结束*/
+/*底部开始*/
+.footer{
+  background-color: #373d41;
+  padding: 40px 0 100px;
+}
+.footer-container{
+  margin-top: 20px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 40px 0 90px;
+}
+.footer-line{
+  float: left;
+  width: 200px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #9f9f9f;
+  font-weight: 600;
+}
+.footer-line dt{
+  margin-bottom: 30px;
+}
+.footer-line dd{
+  margin: 0 0 10px 0;
+}
+.footer-bottom{
+  color: #ffffff;
+  text-align: center;
+}
+/*底部结束*/

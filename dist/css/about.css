@@ -1,0 +1,128 @@
+.second-nav{
+  padding: 20px 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+.second-nav ul{
+  margin: 0;
+}
+.second-nav ul li{
+  list-style: none;
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px #9f9f9f;
+}
+.second-link{
+  color: #000000;
+  display: block;
+  max-width: 96px;
+  margin: 0 auto;
+}
+.second-link img{
+  transition: all 1.5s;
+}
+.second-link:hover img{
+  transform: rotate(360deg);
+}
+.second-link:hover{
+  color: #000000;
+}
+.second-text p{
+  margin: 0;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.growing-ad-header{
+  max-width: 673px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.growing-ad-title,.growing-co-title{
+  padding: 80px 0;
+}
+.growing-ad-title h2,.growing-co-title h2{
+  font-size: 28px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px #9f9f9f;
+}
+.case>ul>li{
+  list-style: none;
+}
+.case>ul>li:before{
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #e47413;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.compared{
+  width: 100%;
+  overflow: hidden;
+
+}
+.compared>div{
+  box-sizing: border-box;
+  float: left;
+  width: 40%;
+  margin: 40px 5%;
+  background-color: #f2f2f2;
+  box-shadow: 0 10px 10px -8px #969696;
+  padding: 30px;
+}
+.compared .talent-line{
+  margin-left: 10px;
+  font-size: 22px;
+}
+.compared h2{
+  display: inline;
+  font-size: 22px;
+  margin: 0;
+}
+.compared p{
+  margin-top: 50px;
+}
+.compared-img{
+  text-align: right;
+}
+.compared .compared-img.logo img{
+  width: 73px;
+  height: 79px;
+  /*display: inline-block;*/
+}
+.compared .compared-img img{
+  width: 67px;
+  height: 67px;
+}
+.summary{
+  margin: 45px auto;
+}
+.case .summary img{
+  width: 40px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+.case .sample-img img{
+  height: auto;
+}
+.compared-img.logo{
+  margin-top: -12px;
+}
+.blueprint-header{
+  padding-top: 120px;
+}
+.blueprint-header-image{
+  max-width: 673px;
+  margin: 0 auto;
+}
