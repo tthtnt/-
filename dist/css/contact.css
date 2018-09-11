@@ -1,0 +1,21 @@
+/*地图开始*/
+.contact-map{
+  height: 500px;
+  margin: 50px 0;
+}
+/*地图结束*/
+.contact-text dl dt{
+  font-weight: 600;
+  text-shadow: 1px 1px 3px #9f9f9f;
+  margin: 20px 0;
+}
+.contact-text dl dd{
+  margin: 20px 0;
+}
+.contact-text dl dd span{
+  margin-right: 20px;
+}
+.contact-title-img{
+  max-width: 673px;
+  margin: 20px auto;
+}

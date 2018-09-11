@@ -26,13 +26,29 @@ window.onload = function () {
     })
   };
   let introduction = $("#introduction").offset().top;
+  //鼠标点击滑动
   $("#video_under").click(function () {
     $('html,body').animate({scrollTop:introduction},1000);
   });
+  //鼠标动画
+  // my$("video_under").onmouseover = function(){
+  //   this.className = "video_under";
+  // };
+  // my$("video_under").onmouseout = function(){
+  //   this.className = "video_under fluctuation";
+  // };
   $(document).bind('mousewheel', function(event, delta) {
     return false;
   });
   objEvt = $._data($(document)[0], 'events');
+  let contact = my$("contact");
+  let contactSrc = contact.getElementsByTagName("img")[0].src.split('.')[0];
+  contact.onmouseover = function () {
+    contact.getElementsByTagName("img")[0].src = contactSrc + "-sh.png";
+  };
+  contact.onmouseout = function () {
+    contact.getElementsByTagName("img")[0].src = contactSrc + ".png";
+  }
 };
 let p=0;
 let t=0;
@@ -76,38 +92,4 @@ function getSize() {
 function changeSize(dv, width, height) {
   dv.style.width = width + "px";
   dv.style.height = height + "px";
-}
-
-
-function disabledMouseWheel() {
-  if(document.addEventListener) {
-    document.addEventListener('DOMMouseScroll', scrollFunc, false);
-  }//W3C
-  window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome
-}
-function scrollFunc(evt) {
-  evt = evt || window.event;
-  if (evt.preventDefault) {
-    // Firefox
-    evt.preventDefault();
-    evt.stopPropagation();
-  } else {
-    // IE
-    evt.cancelBubble = true;
-    evt.returnValue = false;
-  }
-  return false;
-}
-function abledMouseWheel() {
-  console.log("hahha");
-  if(document.removeEventListener) {
-    document.removeEventListener('DOMMouseScroll', scrollFunc, false);
-  }//W3C
-  window.onmousewheel = document.onmousewheel = scrollStrat;//IE/Opera/Chrome
-}
-function scrollStrat(evt) {
-  evt = evt || window.event;
-  evt.cancelBubble = false;
-  evt.returnValue = true;
-  return true;
 }

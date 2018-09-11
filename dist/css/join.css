@@ -1,0 +1,245 @@
+.second-nav{
+  padding: 20px 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+.second-nav ul{
+  margin: 0;
+}
+.second-nav ul li{
+  list-style: none;
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px #9f9f9f;
+}
+.second-link{
+  color: #000000;
+  display: block;
+  max-width: 96px;
+  margin: 0 auto;
+}
+.second-link img{
+  transition: all 1.5s;
+}
+.second-link:hover img{
+  transform: rotate(360deg);
+}
+.second-link:hover{
+  color: #000000;
+}
+.second-text p{
+  margin: 0;
+}
+.join{
+  background: url("../img/join-bgi.jpg") no-repeat;
+  height: 924px;
+}
+.join-header-image{
+  max-width: 673px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.join-contents{
+  width: 161px;
+  height: 574px;
+  background-color: #fff;
+  float: left;
+  margin-right: 12px;
+  box-shadow: 0 0 20px inset #9f9f9f ;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+
+.begin{
+  overflow: hidden;
+  height: 574px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+}
+.after{
+  position: absolute;
+  width: 162px;
+  height: 574px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  z-index: 10;
+}
+.after img{
+  width: 100%;
+}
+.join-contents:last-child{
+  margin-right: 0;
+}
+.join-contents-text{
+  position: absolute;
+  bottom: 80px;
+}
+.join-contents-text p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 16px;
+  padding:0 15px;
+}
+.after-text{
+  position: absolute;
+  height: 574px;
+  width: 162px;
+  top: 0;
+  background-color: rgba(0,0,0,.5);
+  /*opacity: 0;*/
+}
+.after-text p{
+  position: absolute;
+  top: 250px;
+  font-size: 16px;
+  padding:0 15px;
+  color: #ffffff;
+}
+.condition{
+  padding-bottom: 40px;
+}
+.condition-header-image{
+  max-width: 673px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.condition-content{
+  position: relative;
+}
+.content-bgi{
+  margin-left: 70px;
+  width: 987px;
+  height: 744px;
+  background: url("../img/condition_bgi.png") no-repeat;
+}
+.content-li{
+  width: 800px;
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 160px;
+}
+.content-li ul{
+  margin: 0;
+  padding: 0;
+}
+.content-li ul li{
+  list-style: none;
+  height: 70px;
+  line-height: 70px;
+  border-top: 1px solid #ffffff;
+}
+.content-li ul li:first-child{
+  border: none;
+  height: 35px;
+}
+.content-li ul li:last-child{
+  height: 35px;
+}
+.content-li ul li:first-child span,.content-li ul li:last-child span{
+  display: block;
+}
+.content-li ul li span{
+  float: left;
+  height: 100%;
+  background-color: #3668aa;
+  width: 70px;
+  text-align: right;
+  color: #ffffff;
+  font-size: 26px;
+}
+.content-li ul li p{
+  padding-left: 20px;
+  float: left;
+  height: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-size: 22px;
+  background-color: rgba(0,0,0,.7);
+  width: 730px;
+}
+.content-li ul li p:hover{
+  background-color: rgba(255,255,255,.4);
+}
+.content-title{
+  height: 630px;
+  width: 190px;
+  border: 10px solid #3668aa;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  font-weight: 600;
+}
+.title-one{
+  writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/
+  writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/
+  width: 80px;
+  height: 630px;
+  padding: 30px 25px 30px 10px;
+  font-size: 30px;
+  float: right;
+  text-align: center;
+
+}
+.title-two{
+  writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/
+  writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/
+  width: 80px;
+  height: 330px;
+  padding: 30px 0 30px 35px;
+  font-size: 30px;
+  float: right;
+  text-align: center;
+  margin-top: 300px;
+}
+.condition-bottom ul{
+  padding: 0;
+}
+.condition-bottom ul span{
+  float: left;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  color: #ed7700;
+  font-weight: 600;
+}
+.condition-bottom ul li{
+  list-style: none;
+}
+.condition-bottom ul li:before{
+  content: '·';
+  display: block;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  font-size: 40px;
+  color: #ed7700;
+}
+.condition-bottom ul li p{
+  float: left;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 800px;
+  padding-left:10px;
+}
+.condition-bottom ul li:last-child p{
+  line-height: 1.5em;
+  padding-top: 15px;
+}
+.process-header-image{
+  max-width: 673px;
+  padding: 50px 0;
+  margin: 0 auto;
+}

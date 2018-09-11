@@ -98,7 +98,6 @@ function changeAnimate(element, json, fn) {
         if (current != target) {
           flag = false;
         }
-
       } else if (attr == "zIndex") {
         element.style[attr] = json[attr];
       } else {

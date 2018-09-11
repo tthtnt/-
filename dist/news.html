@@ -14,8 +14,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/news.css">
 </head>
-<body>
+<body ondragstart="return false">
 <div class="container">
   <!--导航栏-->
   <div class="nav">
@@ -46,7 +47,7 @@
         <div class="nav-tab">
           <ul class="main-nav clearfix">
             <li>
-              <a class="active" href="index.html">
+              <a href="index.html">
                 聚焦线下
               </a>
             </li>
@@ -61,7 +62,7 @@
               </a>
             </li>
             <li>
-              <a href="news.html">
+              <a class="active" href="news.html">
                 新闻中心
               </a>
             </li>
@@ -81,6 +82,148 @@
     </div>
   </div>
   <!--导航栏结束-->
+  <!--关于我们banner开始-->
+  <div class="banner">
+    <img src="img/banner.jpg" alt="banner">
+  </div>
+  <!--关于我们banner结束-->
+  <!--新闻导航-->
+  <div class="news-nav">
+    <div class="version-container">
+      <ul class="clearfix">
+        <li>
+          <a href="javascript:void(0);" class="news-nav-link">
+            <div class="news-nav-image">
+              <img src="img/co-nav.png" alt="企业新闻">
+            </div>
+            <div class="news-nav-text">
+              <p>企业新闻</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="news-nav-link">
+            <div class="news-nav-image">
+              <img src="img/in-nav.png" alt="行业新闻">
+            </div>
+            <div class="news-nav-text">
+              <p>行业新闻</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--新闻导航结束-->
+  <!--新闻title-->
+  <div class="news-title">
+    <div class="news-title-img">
+      <img src="img/co-news.png" alt="企业新闻">
+    </div>
+  </div>
+  <!--新闻title结束-->
+  <!--新闻中心开始-->
+  <div class="news" id="news">
+    <div class="version-container">
+      <div class="news-left-container">
+        <div class="news-content">
+          <div class="news-detail clearfix" id="news-detail">
+            <div class="news-details clearfix">
+              <div class="date">
+                <div class="number">
+                  01
+                </div>
+                <div class="month">
+                  8/27
+                </div>
+              </div>
+              <div class="news-detail-content">
+                <div class="news-detail-title">
+                  <h3>
+                    深浅度视光科技（大连）有限公司
+                  </h3>
+                </div>
+                <div class="news-detail-text">
+                  <p>深浅度视光科技（大连）有限公司深浅度视光科技（大连）有限公司</p>
+                </div>
+              </div>
+            </div>
+            <div class="news-details clearfix">
+              <div class="date">
+                <div class="number">
+                  02
+                </div>
+                <div class="month">
+                  8/27
+                </div>
+              </div>
+              <div class="news-detail-content">
+                <div class="news-detail-title">
+                  <h3>
+                    深浅度视光科技（大连）有限公司
+                  </h3>
+                </div>
+                <div class="news-detail-text">
+                  <p>深浅度视光科技（大连）有限公司深浅度视光科技（大连）有限公司</p>
+                </div>
+              </div>
+            </div>
+            <div class="news-details clearfix">
+              <div class="date">
+                <div class="number">
+                  03
+                </div>
+                <div class="month">
+                  8/27
+                </div>
+              </div>
+              <div class="news-detail-content">
+                <div class="news-detail-title">
+                  <h3>
+                    深浅度视光科技（大连）有限公司
+                  </h3>
+                </div>
+                <div class="news-detail-text">
+                  <p>深浅度视光科技（大连）有限公司深浅度视光科技（大连）有限公司</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-right-container">
+        <div class="clearfix">
+          <div class="left-container">
+            <div class="left-date">
+              <p>8/27 <span>2018</span></p>
+            </div>
+            <div class="left-title">
+              <h3>
+                深浅度视觉科技（大连）有限公司
+              </h3>
+            </div>
+            <div class="left-content">
+              <p>
+                深浅度视光科技（大连）有限公司深浅度视光科
+                技深浅度视光科技（大连）有限公司深浅度视光
+                科技深浅度视光科技（大连）有限公司深浅度视
+                光科技
+              </p>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="right-img">
+              <img src="img/news-test.jpg" alt="新闻图片">
+            </div>
+          </div>
+        </div>
+        <div class="news-right-container-button">
+          <button>查看详情</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--新闻中心结束-->
   <!--底部开始-->
   <div class="footer">
     <div class="version-container">
@@ -138,5 +281,7 @@
   </div>
   <!--底部结束-->
 </div>
+<script src="js/common.js"></script>
+<script src="js/news.js"></script>
 </body>
 </html>
