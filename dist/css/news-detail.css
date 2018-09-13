@@ -1,0 +1,49 @@
+.news-header-image{
+  margin: 50px 40px;
+}
+.news-header-text{
+  border-bottom: 1px solid #9f9f9f;
+}
+.news-header-text p{
+  float: right;
+  margin: 20px;
+  font-weight: 600;
+}
+.content-title{
+  text-align: center;
+}
+.time{
+  display: block;
+  width: 100%;
+  margin-right: 50px;
+  text-align: right;
+}
+.news-content p{
+  text-indent: 2em;
+}
+.news-content .no-indent{
+  text-indent: 0;
+}
+.news-content ul{
+  margin: 20px;
+  padding: 0;
+}
+.news-content ul li {
+  width: 50%;
+  float: left;
+  list-style: none;
+}
+.news-bottom-content{
+  border-top: 1px solid #9f9f9f;
+  padding: 20px;
+}
+.news-bottom-content p{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.news-title{
+  font-size: 22px;
+  font-weight: 600;
+}

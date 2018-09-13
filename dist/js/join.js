@@ -1,4 +1,15 @@
 window.onload = function () {
+  let link = document.getElementsByClassName("second-link");
+  for (let key in link){
+    let src = '';
+    link[key].onmouseover = function (){
+      src = link[key].getElementsByTagName("img")[0].src.split('.')[0];
+      link[key].getElementsByTagName("img")[0].src = src + '-sh.png';
+    };
+    link[key].onmouseout = function () {
+      link[key].getElementsByTagName("img")[0].src = src + '.png';
+    }
+  }
   let contents = document.getElementsByClassName("join-contents");
   for (let key in contents) {
     contents[key].onmouseover = mouseOverHandle;

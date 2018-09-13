@@ -139,4 +139,13 @@
   border-radius: 5px;
   padding: 5px 10px;
 }
+.news-right-container-button button a{
+  color: #000000;
+}
+.news-right-container-button button:hover{
+  background-color: rgba(0,0,0,.7);
+}
+.news-right-container-button button:hover a{
+  color: #ffffff;
+}
 
